@@ -212,7 +212,7 @@ class CommandUnitTest(unittest.TestCase):
         self.assertEqual(str(sys.stdout.getvalue()), REPORT_FORMAT.format(2,3,"NORTH"))
 
     # discard all commands in the sequence until a valid PLACE command has been executed.
-    def test_command_lowercase_command(self):
+    def test_command_order(self):
         robot = ToyRobot()
 
         command = "MOVE\n" \
